@@ -10,14 +10,14 @@
 - ${} to inlcude functions and parameters in the string literal (like BASH kind of?)
 - white space and newline preserved
 
-Can write HTML within ES6???! Useful when using Node writing backend and want to change front end
-</pre></code>
-function add(a,b) => {a+b;};
-const a = 1;
-const b = 2;
+NOTE: Can write HTML within ES6???! Useful when using Node writing backend and want to change front end
 
-var content = '
-<h1>Hey!<\h1>
-<p>This is ${a} and ${add(a,b)}<\p>
-'
-</code></pre>
+#destructuring
+- for objects and arrays
+- for arrays, index is important so sometimes unused vars are given destrctured names => Solve: use , to escape
+- functions take objects and destructured fields
+
+#dot dot dot(fun! combine two things together)
+- when used in function parameters, takes all the input parameters and convert it into an array
+- when used in push, insert elements instead of array, can even skip push to merge arrays
+- when used in objects, gonna merge to one objects with additional fields, if duplicated fields merging, the one comes after overwrites
