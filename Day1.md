@@ -21,3 +21,30 @@ NOTE: Can write HTML within ES6???! Useful when using Node writing backend and w
 - when used in function parameters, takes all the input parameters and convert it into an array
 - when used in push, insert elements instead of array, can even skip push to merge arrays
 - when used in objects, gonna merge to one objects with additional fields, if duplicated fields merging, the one comes after overwrites
+
+
+##ES6 functional programming
+#pure function
+- output type depends on type of input and does not have side effects. e.g slice and splice
+
+#array helper
+- map, filter, reduce
+- NOTE:in arrow function returning objects cannot use {} => syntax error, Solve: wrap with () or {} + return
+
+#currying(React thing? don't know now but gonna know later)
+- f(a,b,c) => f(a)(b)(c), change a function that takes multiple arguments to a sequence of functions that takes one parameter
+- WOW Scheme-like
+<pre><code>
+function outer(a) {
+ return function inner(b) {
+ return a+b;
+  }
+}
+
+//arrow function:
+const res = a => b => { a + bl};
+</code></pre>
+
+##JSX
+- use classname instead of class
+- React virtual DOM(reconciliation) between App and real DOM, only update the element that does changes
